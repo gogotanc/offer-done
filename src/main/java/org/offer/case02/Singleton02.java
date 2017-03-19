@@ -8,9 +8,7 @@ public class Singleton02 {
 
     private static Singleton02 instance;
 
-    private Singleton02() {
-
-    }
+    private Singleton02() {}
 
     public static Singleton02 getInstance() {
         if (null == instance) {

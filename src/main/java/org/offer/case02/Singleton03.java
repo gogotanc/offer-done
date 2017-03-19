@@ -8,9 +8,7 @@ public class Singleton03 {
 
     private static Singleton03 instance;
 
-    private Singleton03() {
-
-    }
+    private Singleton03() {}
 
     public static synchronized Singleton03 getInstance() {
         if (null == instance) {

@@ -36,6 +36,7 @@ public class SingletonTest {
         assertEquals(true, singleton04.equals(singleton041));
         assertEquals(true, singleton05.equals(singleton051));
         assertEquals(true, singleton06.equals(singleton061));
+
     }
 
 }

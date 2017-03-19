@@ -6,15 +6,13 @@ package org.offer.case02;
  */
 public class Singleton05 {
 
-    private Singleton05() {
-
-    }
+    private Singleton05() {}
 
     public static Singleton05 getInstance() {
         return InnerClass.instance;
     }
 
     private static class InnerClass {
-        private static Singleton05 instance = new Singleton05();
+        private static final Singleton05 instance = new Singleton05();
     }
 }
