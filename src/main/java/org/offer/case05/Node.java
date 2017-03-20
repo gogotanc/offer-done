@@ -1,7 +1,7 @@
-package org.offer.case5;
+package org.offer.case05;
 
 /**
- * 面试题 5：从尾到头打印链表
+ * 链表的节点结构
  * Created by tanc on 2017/3/19.
  */
 public class Node<E> {
