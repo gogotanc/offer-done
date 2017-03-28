@@ -31,13 +31,13 @@ public class RotatingArrayTest {
 
     @Test
     public void case4() throws Exception {
-        int[] arr = {3, 4, 5, 6, 7, 8, 0, 1, 2};
+        int[] arr = {};
         System.out.println(RotatingArray.min(arr));
     }
 
     @Test
     public void case5() throws Exception {
-        int[] arr = {0, 0, 0, 0, 0, 0, 0, 0, 0};
+        int[] arr = {0};
         System.out.println(RotatingArray.min(arr));
     }
 
