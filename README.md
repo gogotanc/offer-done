@@ -63,6 +63,12 @@ struct BinaryTreeNode
 
 解答：[代码地址]()
 
+### 面试题 7：用两个栈实现队列
+
+用两个栈实现一个队列。请实现它的两个函数 appendTail 和 deleteHead，分别完成在队列尾部插入结点和在队列头部删除结点的功能。
+
+解答：[代码地址]()
+
 ## 参考文章
 
 1. [如何正确地写出单例模式](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/)
