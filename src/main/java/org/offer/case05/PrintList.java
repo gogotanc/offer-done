@@ -6,8 +6,11 @@ package org.offer.case05;
  */
 public class PrintList {
 
-    private static Stack<String> stack = null;
-
+    /**
+     * 顺序打印链表
+     *
+     * @param head 链表的头节点
+     */
     public static void order(Node<String> head) {
         Node<String> temp = head;
         while (temp.next != null) {
@@ -17,6 +20,11 @@ public class PrintList {
         }
     }
 
+    /**
+     * 使用递归实现从尾到头打印链表
+     *
+     * @param head 链表的头节点
+     */
     public static void tailByRecursion(Node<String> head) {
         if (null == head || null == head.next) {
             return;
@@ -33,12 +41,17 @@ public class PrintList {
         System.out.print(" ");
     }
 
+    /**
+     * 使用栈实现从尾到头打印链表
+     *
+     * @param head 链表的头节点
+     */
     public static void tailByStack(Node<String> head) {
         if (null == head || null == head.next) {
             return;
         }
         Node<String> temp = head;
-        stack = new Stack<>();
+        Stack<String> stack = new Stack<>();
         while (temp.next != null) {
             temp = temp.next;
             stack.push(temp.data);
