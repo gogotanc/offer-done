@@ -93,6 +93,12 @@ F[n] = F[n-1]+ F[n-2]  (n => 2)
 
 解答：[代码地址]()
 
+### 面试题 11：数值的整数次方
+
+实现函数 double Power(double base, int exponent)，求 base 的 exponent 次方。不得使用库函数，同时不需要考虑大数问题。
+
+解答：[代码地址]()
+
 ## 参考文章
 
 1. [如何正确地写出单例模式](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/)
