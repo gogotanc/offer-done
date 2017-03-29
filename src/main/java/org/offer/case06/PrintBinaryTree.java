@@ -1,5 +1,7 @@
 package org.offer.case06;
 
+import org.offer.utils.BinaryTreeNode;
+
 /**
  * 打印二叉树
  * Created by tanc on 2017/3/28.

@@ -1,4 +1,4 @@
-package org.offer.case05;
+package org.offer.utils;
 
 /**
  * 链表 或 栈 的节点结构

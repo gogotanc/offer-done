@@ -1,6 +1,6 @@
 package org.offer.case07;
 
-import org.offer.case05.Stack;
+import org.offer.utils.Stack;
 
 /**
  * 面试题 7：用两个栈实现队列

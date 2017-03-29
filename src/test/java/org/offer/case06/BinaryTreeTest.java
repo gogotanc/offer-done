@@ -1,8 +1,7 @@
 package org.offer.case06;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
+import org.offer.utils.BinaryTreeNode;
 
 /**
  * 面试题 6：重建二叉树

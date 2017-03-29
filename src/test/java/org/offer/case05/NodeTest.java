@@ -1,6 +1,7 @@
 package org.offer.case05;
 
 import org.junit.Test;
+import org.offer.utils.Node;
 
 /**
  * 面试题 5

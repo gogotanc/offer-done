@@ -2,10 +2,8 @@ package org.offer.case13;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.offer.case05.Node;
+import org.offer.utils.Node;
 import org.offer.case05.PrintList;
-
-import static org.junit.Assert.*;
 
 /**
  * 面试题 13：在 O(1) 时间删除链表结点

@@ -1,5 +1,7 @@
 package org.offer.case06;
 
+import org.offer.utils.BinaryTreeNode;
+
 /**
  * 面试题 6：重建二叉树
  * Created by tanc on 2017/3/28.

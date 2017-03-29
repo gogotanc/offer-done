@@ -1,4 +1,4 @@
-package org.offer.case06;
+package org.offer.utils;
 
 /**
  * 二叉树结点
@@ -6,9 +6,9 @@ package org.offer.case06;
  */
 public class BinaryTreeNode<E> {
 
-    E data;
-    BinaryTreeNode<E> left;
-    BinaryTreeNode<E> right;
+    public E data;
+    public BinaryTreeNode<E> left;
+    public BinaryTreeNode<E> right;
 
     public BinaryTreeNode(E data) {
         this(data, null, null);

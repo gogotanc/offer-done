@@ -1,5 +1,8 @@
 package org.offer.case05;
 
+import org.offer.utils.Node;
+import org.offer.utils.Stack;
+
 /**
  * 面试题 5：从尾到头打印链表
  * Created by tanc on 2017/3/20.
