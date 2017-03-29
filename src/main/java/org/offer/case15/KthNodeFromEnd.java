@@ -10,7 +10,7 @@ public class KthNodeFromEnd {
 
     public static Node<?> get(Node<?> head, int k) {
 
-        if (null == head || k == 0 || head.next == null) {
+        if (null == head || k <= 0 || head.next == null) {
             return null;
         }
 
