@@ -15,13 +15,12 @@ public class KthNodeFromEndTest {
     public void get() throws Exception {
 
         SinglyLinkedList<Integer> list = new SinglyLinkedList<>();
-
         list.add(1);
         list.add(2);
         list.add(3);
         list.add(4);
         list.print();
-        Node result = KthNodeFromEnd.get(list.getHead(), 5);
+        Node result = KthNodeFromEnd.get(list.getHead(), 4);
         if (null != result) {
             System.out.println(result.data);
         }

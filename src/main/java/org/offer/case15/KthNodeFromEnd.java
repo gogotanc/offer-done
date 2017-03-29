@@ -10,15 +10,15 @@ public class KthNodeFromEnd {
 
     public static Node<?> get(Node<?> head, int k) {
 
-        if (null == head || k <= 0 || head.next == null) {
+        if (null == head || k <= 0) {
             return null;
         }
 
-        Node<?> kthFromEnd = head.next;
-        Node<?> temp = head.next;
+        Node<?> kthFromEnd = head;
+        Node<?> temp = head;
 
-        for (int i = 1; i < k; i++) {
-            if (temp.next != null) {
+        for (int i = 0; i < k - 1; i++) {
+            if (temp != null) {
                 temp = temp.next;
             } else {
                 return null;

@@ -1,7 +1,6 @@
 package org.offer.case16;
 
 import org.offer.utils.Node;
-import org.offer.utils.Stack;
 
 /**
  * 面试题 16：反转链表
@@ -9,18 +8,21 @@ import org.offer.utils.Stack;
  */
 public class ReverseList {
 
-    public static void reverse(Node<Integer> head) {
-        Stack<Node<Integer>> stack = new Stack<>();
-        Node<Integer> temp = head;
-        while (temp.next != null) {
-            temp = temp.next;
-            stack.push(temp);
+    public static Node<Integer> reverse(Node<Integer> head) {
+        if (null == head) {
+            return null;
         }
-        head.next = null;
-        while (!stack.isEmpty()) {
-            temp = stack.pop();
-            temp.next = head.next;
-            head.next = temp;
+        Node<Integer> prev;
+        Node<Integer> temp;
+
+        prev = null;
+        temp = head;
+        while (temp != null) {
+            Node<Integer> next = temp.next;
+            temp.next = prev;
+            prev = temp;
+            temp = next;
         }
+        return prev;
     }
 }

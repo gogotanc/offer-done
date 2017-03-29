@@ -20,8 +20,6 @@ public class ListTest {
         list.add(2);
         list.add(5);
         list.print();
-        list.remove(5);
-        list.print();
     }
 
 }

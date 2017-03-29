@@ -19,7 +19,7 @@ public class ReverseListTest {
         list.add(3);
         list.add(4);
         list.print();
-        ReverseList.reverse(list.getHead());
+        list.setHead(ReverseList.reverse(list.getHead()));
         list.print();
     }
 

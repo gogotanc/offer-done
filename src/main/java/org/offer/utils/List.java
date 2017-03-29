@@ -10,7 +10,7 @@ public interface List<E> {
 
     int size();
 
-    void remove(E data);
+//    void remove(E data);
 
     boolean isEmpty();
 
