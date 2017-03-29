@@ -11,8 +11,8 @@ public class PrintList {
      *
      * @param head 链表的头节点
      */
-    public static void order(Node<String> head) {
-        Node<String> temp = head;
+    public static void order(Node<?> head) {
+        Node<?> temp = head;
         while (temp.next != null) {
             temp = temp.next;
             System.out.print(temp.data);
@@ -25,14 +25,14 @@ public class PrintList {
      *
      * @param head 链表的头节点
      */
-    public static void tailByRecursion(Node<String> head) {
+    public static void tailByRecursion(Node<?> head) {
         if (null == head || null == head.next) {
             return;
         }
         print(head.next);
     }
 
-    private static void print(Node<String> head) {
+    private static void print(Node<?> head) {
         if (null == head) {
             return;
         }
