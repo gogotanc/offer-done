@@ -4,7 +4,7 @@ package org.offer.utils;
  * 单向链表
  * Created by tanc on 2017/3/29.
  */
-public class SinglyLinkedList<E> implements List<E> {
+public class SinglyLinkedList<E extends Comparable<? super E>> implements List<E> {
 
     private Node<E> head;
     private Node<E> tail;

@@ -4,7 +4,7 @@ package org.offer.utils;
  * 链表 或 栈 的节点结构
  * Created by tanc on 2017/3/19.
  */
-public class Node<E> {
+public class Node<E extends Comparable<? super E>> {
 
     public E data;
     public Node<E> next;

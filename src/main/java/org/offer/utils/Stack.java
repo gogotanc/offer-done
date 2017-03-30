@@ -4,7 +4,7 @@ package org.offer.utils;
  * 栈
  * Created by tanc on 2017/3/20.
  */
-public class Stack<E> {
+public class Stack<E extends Comparable<? super E>> {
 
     private Node<E> top;
     private int size;
