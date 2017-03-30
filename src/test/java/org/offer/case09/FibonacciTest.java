@@ -1,5 +1,6 @@
 package org.offer.case09;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -11,6 +12,7 @@ import static org.junit.Assert.*;
 public class FibonacciTest {
 
     @Test
+    @Ignore
     public void methodOne() throws Exception {
         long start = System.nanoTime();
         System.out.println(Fibonacci.methodOne(100L));

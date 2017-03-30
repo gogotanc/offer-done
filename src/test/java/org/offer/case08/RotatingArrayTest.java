@@ -1,14 +1,17 @@
 package org.offer.case08;
 
+import org.junit.Rule;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
+import org.junit.rules.ExpectedException;
 
 /**
  * 面试题 8：旋转数组的最小数字
  * Created by tanc on 2017/3/28.
  */
 public class RotatingArrayTest {
+
+    @Rule
+    public ExpectedException expect = ExpectedException.none();
 
     @Test
     public void case1() throws Exception {
@@ -31,6 +34,7 @@ public class RotatingArrayTest {
 
     @Test
     public void case4() throws Exception {
+        expect.expect(RuntimeException.class);
         int[] arr = {};
         System.out.println(RotatingArray.min(arr));
     }
