@@ -10,11 +10,23 @@ public class BinaryTree<E> {
 
     private BinaryTreeNode<E> root;
 
+    // 提供生成 随机 或 伪随机 的二叉树
+    private Random random;
+
     public BinaryTree() {
+        this(System.nanoTime());
+    }
+
+    public BinaryTree(long seed) {
         root = null;
+        random = new Random(seed);
     }
 
     public void addRandom(E data) {
+        root = addRandom(root, data);
+    }
+
+    public void addRandom(E data, long seed) {
         root = addRandom(root, data);
     }
 
@@ -23,7 +35,6 @@ public class BinaryTree<E> {
             return new BinaryTreeNode<>(data);
         }
 
-        Random random = new Random(System.nanoTime());
         int result = random.nextInt();
         if ((result & 1) == 1) {
             node.left = addRandom(node.left, data);
@@ -33,7 +44,7 @@ public class BinaryTree<E> {
         return node;
     }
 
-    public BinaryTreeNode getRoot() {
+    public BinaryTreeNode<E> getRoot() {
         return root;
     }
 }

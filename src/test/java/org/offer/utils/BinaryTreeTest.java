@@ -9,7 +9,7 @@ import org.junit.Test;
 public class BinaryTreeTest {
 
     @Test
-    public void add() throws Exception {
+    public void case1() throws Exception {
         BinaryTree<Integer> tree = new BinaryTree<>();
 
         tree.addRandom(1);
@@ -21,7 +21,20 @@ public class BinaryTreeTest {
         PrintBinaryTree.inOrder(tree.getRoot());
         PrintBinaryTree.preOrder(tree.getRoot());
         PrintBinaryTree.postOrder(tree.getRoot());
+    }
 
-        PrintBinaryTree.postOrder(null);
+    @Test
+    public void case2() throws Exception {
+        BinaryTree<Integer> tree = new BinaryTree<>(47);
+
+        tree.addRandom(1);
+        tree.addRandom(2);
+        tree.addRandom(3);
+        tree.addRandom(4);
+        tree.addRandom(5);
+
+        PrintBinaryTree.inOrder(tree.getRoot());
+        PrintBinaryTree.preOrder(tree.getRoot());
+        PrintBinaryTree.postOrder(tree.getRoot());
     }
 }
