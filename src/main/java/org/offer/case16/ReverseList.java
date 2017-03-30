@@ -8,17 +8,17 @@ import org.offer.utils.Node;
  */
 public class ReverseList {
 
-    public static Node<Integer> reverse(Node<Integer> head) {
+    public static <T extends Comparable<? super T>> Node<T> reverse(Node<T> head) {
         if (null == head) {
             return null;
         }
-        Node<Integer> prev;
-        Node<Integer> temp;
+        Node<T> prev;
+        Node<T> temp;
 
         prev = null;
         temp = head;
         while (temp != null) {
-            Node<Integer> next = temp.next;
+            Node<T> next = temp.next;
             temp.next = prev;
             prev = temp;
             temp = next;

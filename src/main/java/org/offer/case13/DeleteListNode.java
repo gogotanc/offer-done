@@ -8,7 +8,7 @@ import org.offer.utils.Node;
  */
 public class DeleteListNode {
 
-    public static void delete(Node<Integer> head, Node<Integer> node) {
+    public static <T extends Comparable<? super T>> void delete(Node<T> head, Node<T> node) {
         if (null == head || null == node) {
             return;
         }
@@ -21,9 +21,9 @@ public class DeleteListNode {
         node.next = node.next.next;
     }
 
-    private static void deleteTail(Node<Integer> head) {
-        Node<Integer> temp = head;
-        Node<Integer> lastTwo = head;
+    private static <T extends Comparable<? super T>> void deleteTail(Node<T> head) {
+        Node<T> temp = head;
+        Node<T> lastTwo = head;
         while (temp.next != null) {
             lastTwo = temp;
             temp = temp.next;

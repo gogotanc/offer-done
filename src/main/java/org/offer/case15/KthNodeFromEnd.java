@@ -8,14 +8,14 @@ import org.offer.utils.Node;
  */
 public class KthNodeFromEnd {
 
-    public static Node<?> get(Node<?> head, int k) {
+    public static <T extends Comparable<? super T>> Node<T> get(Node<T> head, int k) {
 
         if (null == head || k <= 0) {
             return null;
         }
 
-        Node<?> kthFromEnd = head;
-        Node<?> temp = head;
+        Node<T> kthFromEnd = head;
+        Node<T> temp = head;
 
         for (int i = 0; i < k - 1; i++) {
             if (temp != null) {

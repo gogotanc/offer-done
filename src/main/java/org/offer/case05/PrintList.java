@@ -14,8 +14,8 @@ public class PrintList {
      *
      * @param head 链表的头节点
      */
-    public static void order(Node<?> head) {
-        Node<?> temp = head;
+    public static <T extends Comparable<? super T>> void order(Node<T> head) {
+        Node<T> temp = head;
         while (temp.next != null) {
             temp = temp.next;
             System.out.print(temp.data);
@@ -28,14 +28,14 @@ public class PrintList {
      *
      * @param head 链表的头节点
      */
-    public static void tailByRecursion(Node<?> head) {
+    public static <T extends Comparable<? super T>> void tailByRecursion(Node<T> head) {
         if (null == head || null == head.next) {
             return;
         }
         print(head.next);
     }
 
-    private static void print(Node<?> head) {
+    private static <T extends Comparable<? super T>> void print(Node<T> head) {
         if (null == head) {
             return;
         }
@@ -49,12 +49,12 @@ public class PrintList {
      *
      * @param head 链表的头节点
      */
-    public static void tailByStack(Node<String> head) {
+    public static <T extends Comparable<? super T>> void tailByStack(Node<T> head) {
         if (null == head || null == head.next) {
             return;
         }
-        Node<String> temp = head;
-        Stack<String> stack = new Stack<>();
+        Node<T> temp = head;
+        Stack<T> stack = new Stack<>();
         while (temp.next != null) {
             temp = temp.next;
             stack.push(temp.data);
