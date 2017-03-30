@@ -10,6 +10,12 @@ public class MergeSortedList {
 
     public static <T extends Comparable<? super T>> Node<T> merge(Node<T> listOne, Node<T> listTwo) {
 
+        if (null == listOne) {
+            return listTwo;
+        } else if (null == listTwo) {
+            return listOne;
+        }
+
         Node<T> head = null;
         Node<T> tail = null;
         Node<T> one;
@@ -49,27 +55,19 @@ public class MergeSortedList {
             one = listOne;
             listOne = listOne.next;
             one.next = null;
-            if (null == tail) {
-                head = one;
-                tail = one;
-            } else {
-                temp = tail;
-                tail = one;
-                temp.next = tail;
-            }
+
+            temp = tail;
+            tail = one;
+            temp.next = tail;
         }
         while (listTwo != null) {
             two = listTwo;
             listTwo = listTwo.next;
             two.next = null;
-            if (null == tail) {
-                head = two;
-                tail = two;
-            } else {
-                temp = tail;
-                tail = two;
-                temp.next = tail;
-            }
+
+            temp = tail;
+            tail = two;
+            temp.next = tail;
         }
 
         return head;

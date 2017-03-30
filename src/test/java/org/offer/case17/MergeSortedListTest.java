@@ -23,7 +23,7 @@ public class MergeSortedListTest {
     }
 
     @Test
-    public void merge() throws Exception {
+    public void case1() throws Exception {
 
         listOne.add(1);
         listOne.add(3);
@@ -36,12 +36,40 @@ public class MergeSortedListTest {
         listTwo.add(8);
 
         Node<Integer> node = MergeSortedList.merge(listOne.getHead(), listTwo.getHead());
+        print(node);
+    }
 
+    @Test
+    public void case2() throws Exception {
+
+        listOne.add(1);
+
+        listTwo.add(2);
+        listTwo.add(4);
+        listTwo.add(6);
+        listTwo.add(8);
+
+        Node<Integer> node = MergeSortedList.merge(listOne.getHead(), listTwo.getHead());
+        print(node);
+    }
+
+    @Test
+    public void case3() throws Exception {
+
+        listTwo.add(2);
+
+        Node<Integer> node = MergeSortedList.merge(listOne.getHead(), listTwo.getHead());
+        print(node);
+    }
+
+    private void print(Node<Integer> node) {
+        if (null == node) {
+            return;
+        }
         while (node != null) {
             System.out.print(node.data + ",");
             node = node.next;
         }
         System.out.println();
     }
-
 }
