@@ -57,13 +57,21 @@ public class SinglyLinkedList<E> implements List<E> {
 
     @Override
     public void print() {
+        StringBuilder builder = new StringBuilder();
         Node<E> temp = head;
         while (temp != null) {
-            System.out.print(temp.data);
-            System.out.print(",");
+            builder.append(temp.data).append(",");
             temp = temp.next;
         }
-        System.out.println();
+        if (builder.length() != 0) {
+            builder.insert(0, "[");
+            builder.deleteCharAt(builder.length() - 1);
+            builder.append("]");
+            System.out.println(builder.toString());
+        } else {
+            builder.append("[]");
+            System.out.println(builder.toString());
+        }
     }
 
     public Node<E> getHead() {
