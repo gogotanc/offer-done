@@ -135,6 +135,12 @@ F[n] = F[n-1]+ F[n-2]  (n => 2)
 
 解答：[代码地址]()
 
+### 面试题 18：树的子结构
+
+输入两颗二叉树 A 和 B，判断 B 是不是 A 的子结构。
+
+解答：[代码地址]()
+
 ## 参考文章
 
 1. [如何正确地写出单例模式](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/)

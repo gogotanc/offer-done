@@ -8,23 +8,34 @@ import org.offer.utils.BinaryTreeNode;
  */
 public class SubStructureInTree {
 
+    /**
+     * 递归遍历被搜索的树的所有结点，出现与子树根节点相同的结点 就继续比较他们的子树
+     */
     public static <T> boolean hasSubTree(BinaryTreeNode<T> tree, BinaryTreeNode<T> sub) {
-        if (null == tree) {
-            return null == sub;
+
+        boolean result = false;
+
+        if (null != tree && null != sub) {
+            if (tree.equals(sub)) {
+                result = compare(tree, sub);
+            }
+            if (!result) {
+                result = hasSubTree(tree.left, sub) || hasSubTree(tree.right, sub);
+            }
         }
 
-        if (!tree.equals(sub)) {
-            return hasSubTree(tree.left, sub) || hasSubTree(tree.right, sub);
-        }
-
-        return compare(tree, sub);
+        return result;
     }
 
     private static <T> boolean compare(BinaryTreeNode<T> tree, BinaryTreeNode<T> sub) {
 
-        if (null == tree) {
-            return null == sub;
+        if (null == sub) {
+            return true;
         }
+        if (null == tree) {
+            return false;
+        }
+
         if (!tree.equals(sub)) {
             return false;
         }

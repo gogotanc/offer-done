@@ -66,4 +66,47 @@ public class SubStructureInTreeTest {
 
         assertEquals(true, SubStructureInTree.hasSubTree(tree.getRoot(), sub.getRoot()));
     }
+
+    @Test
+    public void case3() throws Exception {
+
+        BinaryTree<Integer> tree = new BinaryTree<>(47);
+        BinaryTree<Integer> sub = new BinaryTree<>(13);
+
+        assertEquals(true, SubStructureInTree.hasSubTree(tree.getRoot(), sub.getRoot()));
+    }
+
+    @Test
+    public void case4() throws Exception {
+
+        BinaryTree<Integer> tree = new BinaryTree<>(47);
+        BinaryTree<Integer> sub = new BinaryTree<>(11);
+
+        tree.addRandom(1);
+        tree.addRandom(8);
+        tree.addRandom(3);
+        tree.addRandom(4);
+        tree.addRandom(5);
+        tree.addRandom(6);
+        tree.addRandom(7);
+        tree.addRandom(8);
+        tree.addRandom(9);
+        tree.addRandom(0);
+        // 中序遍历结果为：[5,8,4,8,9,1,6,3,7,0]
+        // 前序遍历结果为：[1,8,5,4,8,9,3,6,7,0]
+
+        sub.addRandom(8);
+        sub.addRandom(5);
+        sub.addRandom(4);
+        // 中序遍历结果为：[5,8,4]
+        // 前序遍历结果为：[8,5,4]
+
+        PrintBinaryTree.inOrder(tree.getRoot());
+        PrintBinaryTree.preOrder(tree.getRoot());
+
+        PrintBinaryTree.inOrder(sub.getRoot());
+        PrintBinaryTree.preOrder(sub.getRoot());
+
+        assertEquals(true, SubStructureInTree.hasSubTree(tree.getRoot(), sub.getRoot()));
+    }
 }
