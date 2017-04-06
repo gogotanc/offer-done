@@ -28,7 +28,7 @@ class CMString
 
 解答：[代码地址](https://github.com/gogotanc/offer-done/tree/master/src/main/java/org/offer/case02)
 
-**注意：**使用双重检验锁的方式有很多需要注意的细节，为什么是双重检验，为什么使用 volatile 关键字，详情见[参考文章](#参考文章)第一篇。
+**注意：** 使用双重检验锁的方式有很多需要注意的细节，为什么是双重检验，为什么使用 volatile 关键字，详情见[参考文章](#参考文章)第一篇。
 
 ### 面试题 3：二维数组的查找
 
