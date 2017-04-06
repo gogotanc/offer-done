@@ -141,6 +141,12 @@ F[n] = F[n-1]+ F[n-2]  (n => 2)
 
 解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case18/SubStructureInTree.java)
 
+### 面试题 19：二叉树的镜像
+
+请完成一个函数，输入一个二叉树，该函数输出它的镜像。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case19/MirrorOfBinaryTree.java)
+
 ## 参考文章
 
 1. [如何正确地写出单例模式](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/)
