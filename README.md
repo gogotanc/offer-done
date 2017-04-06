@@ -147,6 +147,18 @@ F[n] = F[n-1]+ F[n-2]  (n => 2)
 
 解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case19/MirrorOfBinaryTree.java)
 
+### 面试题 20：顺时针打印矩阵
+
+输入一个矩阵，按照从外向里以顺时针的顺序打印出每一个数字。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case20/PrintMatrix.java)
+
+### 面试题 21：包含 min 函数的栈
+
+定义栈的数据结构，请在该类型中实现一个能够得到栈的最小元素的 min 函数。在该栈中，调用 min、push、pop 的时间复杂度都是 O(1)。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case21/StackWithMin.java)
+
 ## 参考文章
 
 1. [如何正确地写出单例模式](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/)

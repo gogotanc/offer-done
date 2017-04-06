@@ -37,4 +37,11 @@ public class Stack<E extends Comparable<? super E>> {
         size--;
         return temp.data;
     }
+
+    public E top() {
+        if (isEmpty()) {
+            return null;
+        }
+        return top.next.data;
+    }
 }
