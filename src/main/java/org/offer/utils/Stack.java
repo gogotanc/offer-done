@@ -1,10 +1,12 @@
 package org.offer.utils;
 
+import org.offer.utils.node.Node;
+
 /**
  * 栈
  * Created by tanc on 2017/3/20.
  */
-public class Stack<E extends Comparable<? super E>> {
+public class Stack<E> {
 
     private Node<E> top;
     private int size;

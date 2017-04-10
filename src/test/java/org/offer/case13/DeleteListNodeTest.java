@@ -2,7 +2,7 @@ package org.offer.case13;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.offer.utils.Node;
+import org.offer.utils.node.Node;
 import org.offer.case05.PrintList;
 
 /**

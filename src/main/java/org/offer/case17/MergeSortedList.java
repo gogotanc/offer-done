@@ -1,6 +1,6 @@
 package org.offer.case17;
 
-import org.offer.utils.Node;
+import org.offer.utils.node.Node;
 
 /**
  * 面试题 17：合并两个排序的链表

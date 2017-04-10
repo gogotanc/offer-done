@@ -2,7 +2,7 @@ package org.offer.case18;
 
 import org.junit.Test;
 import org.offer.utils.BinaryTree;
-import org.offer.utils.PrintBinaryTree;
+import org.offer.utils.print.PrintBinaryTree;
 
 import static org.junit.Assert.*;
 
@@ -73,7 +73,7 @@ public class SubStructureInTreeTest {
         BinaryTree<Integer> tree = new BinaryTree<>(47);
         BinaryTree<Integer> sub = new BinaryTree<>(13);
 
-        assertEquals(true, SubStructureInTree.hasSubTree(tree.getRoot(), sub.getRoot()));
+        assertEquals(false, SubStructureInTree.hasSubTree(tree.getRoot(), sub.getRoot()));
     }
 
     @Test

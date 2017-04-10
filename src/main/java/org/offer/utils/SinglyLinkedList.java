@@ -1,5 +1,7 @@
 package org.offer.utils;
 
+import org.offer.utils.node.Node;
+
 /**
  * 单向链表
  * Created by tanc on 2017/3/29.

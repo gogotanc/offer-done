@@ -1,6 +1,6 @@
 package org.offer.case16;
 
-import org.offer.utils.Node;
+import org.offer.utils.node.Node;
 
 /**
  * 面试题 16：反转链表

@@ -1,6 +1,6 @@
 package org.offer.case15;
 
-import org.offer.utils.Node;
+import org.offer.utils.node.Node;
 
 /**
  * 面试题 15：链表中倒数第 K 个结点
@@ -17,8 +17,8 @@ public class KthNodeFromEnd {
         Node<T> kthFromEnd = head;
         Node<T> temp = head;
 
-        for (int i = 0; i < k - 1; i++) {
-            if (temp != null) {
+        for (int i = 1; i < k; i++) {
+            if (temp.next != null) {
                 temp = temp.next;
             } else {
                 return null;

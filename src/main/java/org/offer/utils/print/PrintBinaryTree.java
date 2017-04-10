@@ -1,4 +1,6 @@
-package org.offer.utils;
+package org.offer.utils.print;
+
+import org.offer.utils.node.BinaryTreeNode;
 
 /**
  * 打印二叉树

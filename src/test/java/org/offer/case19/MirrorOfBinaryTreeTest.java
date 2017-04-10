@@ -2,10 +2,8 @@ package org.offer.case19;
 
 import org.junit.Test;
 import org.offer.utils.BinaryTree;
-import org.offer.utils.BinaryTreeNode;
-import org.offer.utils.PrintBinaryTree;
-
-import static org.junit.Assert.*;
+import org.offer.utils.node.BinaryTreeNode;
+import org.offer.utils.print.PrintBinaryTree;
 
 /**
  * 面试题 19：二叉树的镜像

@@ -1,6 +1,6 @@
 package org.offer.case18;
 
-import org.offer.utils.BinaryTreeNode;
+import org.offer.utils.node.BinaryTreeNode;
 
 /**
  * 面试题 18：树的子结构
@@ -36,7 +36,7 @@ public class SubStructureInTree {
             return false;
         }
 
-        if (!tree.equals(sub)) {
+        if (!tree.data.equals(sub.data)) {
             return false;
         }
 

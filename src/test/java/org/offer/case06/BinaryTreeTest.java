@@ -1,8 +1,8 @@
 package org.offer.case06;
 
 import org.junit.Test;
-import org.offer.utils.BinaryTreeNode;
-import org.offer.utils.PrintBinaryTree;
+import org.offer.utils.node.BinaryTreeNode;
+import org.offer.utils.print.PrintBinaryTree;
 
 /**
  * 面试题 6：重建二叉树

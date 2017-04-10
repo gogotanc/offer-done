@@ -1,6 +1,6 @@
 package org.offer.case05;
 
-import org.offer.utils.Node;
+import org.offer.utils.node.Node;
 import org.offer.utils.Stack;
 
 /**

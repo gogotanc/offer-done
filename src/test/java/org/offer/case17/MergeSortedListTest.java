@@ -2,10 +2,8 @@ package org.offer.case17;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.offer.utils.Node;
+import org.offer.utils.node.Node;
 import org.offer.utils.SinglyLinkedList;
-
-import static org.junit.Assert.*;
 
 /**
  * 面试题 17：合并两个排序的链表

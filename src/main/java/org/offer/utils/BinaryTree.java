@@ -1,5 +1,7 @@
 package org.offer.utils;
 
+import org.offer.utils.node.BinaryTreeNode;
+
 import java.util.Random;
 
 /**

@@ -6,7 +6,7 @@ import org.offer.utils.Stack;
  * 面试题 7：用两个栈实现队列
  * Created by tanc on 2017/3/28.
  */
-public class QueueByStack<E extends Comparable<? super E>> {
+public class QueueByStack<E> {
 
     private Stack<E> in;
     private Stack<E> out;

@@ -1,6 +1,6 @@
 package org.offer.case19;
 
-import org.offer.utils.BinaryTreeNode;
+import org.offer.utils.node.BinaryTreeNode;
 
 /**
  * 面试题 19：二叉树的镜像

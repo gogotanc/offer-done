@@ -1,6 +1,6 @@
 package org.offer.case13;
 
-import org.offer.utils.Node;
+import org.offer.utils.node.Node;
 
 /**
  * 面试题 13：在 O(1) 时间删除链表结点
