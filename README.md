@@ -169,8 +169,13 @@ F[n] = F[n-1]+ F[n-2]  (n => 2)
 
 从上往下打印二叉树的每个结点，同一层的结点按照从左到右的顺序打印。
 
-解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case21/StackPushPopOrder.java)
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case21/PrintTree.java)
 
+### 面试题 24：二叉搜索树的后序遍历序列
+
+输入一个整数数组，判断该数组是否为某二叉搜索树的后序遍历的结果。如果是则返回 true，否则返回 false。假设输入的数组的任意两个数字都互不相同。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case21/PrintTree.java)
 
 ## 参考文章
 
