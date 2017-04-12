@@ -175,7 +175,13 @@ F[n] = F[n-1]+ F[n-2]  (n => 2)
 
 输入一个整数数组，判断该数组是否为某二叉搜索树的后序遍历的结果。如果是则返回 true，否则返回 false。假设输入的数组的任意两个数字都互不相同。
 
-解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case21/PrintTree.java)
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case21/VerifySequenceOfBST.java)
+
+### 面试题 25：二叉树中和为某一值的路径
+
+输入一颗二叉树和一个整数，打印出二叉树结点值和为输入整数的所有路径。从树的根结点开始往下一直到叶结点所经过的结点形成一条路径。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case21/FindPath.java)
 
 ## 参考文章
 
