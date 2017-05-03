@@ -163,25 +163,31 @@ F[n] = F[n-1]+ F[n-2]  (n => 2)
 
 输入两个整数序列，第一个序列表示栈的压入顺序，请判断第二个序列是否为该栈的弹出序列。假设压入栈的所有数字均不相等。例如序列 1、2、3、4、5 是某栈的压栈序列，序列 4、5、3、2、1 是该压栈序列对应的一个弹出序列，但 4、3、5、1、2 就不可能是该压栈序列的弹出序列。
 
-解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case21/StackPushPopOrder.java)
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case22/StackPushPopOrder.java)
 
 ### 面试题 23：从上往下打印二叉树
 
 从上往下打印二叉树的每个结点，同一层的结点按照从左到右的顺序打印。
 
-解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case21/PrintTree.java)
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case23/PrintTree.java)
 
 ### 面试题 24：二叉搜索树的后序遍历序列
 
 输入一个整数数组，判断该数组是否为某二叉搜索树的后序遍历的结果。如果是则返回 true，否则返回 false。假设输入的数组的任意两个数字都互不相同。
 
-解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case21/VerifySequenceOfBST.java)
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case24/VerifySequenceOfBST.java)
 
 ### 面试题 25：二叉树中和为某一值的路径
 
 输入一颗二叉树和一个整数，打印出二叉树结点值和为输入整数的所有路径。从树的根结点开始往下一直到叶结点所经过的结点形成一条路径。
 
-解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case21/FindPath.java)
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case25/FindPath.java)
+
+### 面试题 26: 复杂链表的复制
+
+请实现函数 complexListNodeClone(ComplexListNode head)，复制一个复杂链表。在复杂链表中，每个节点除了有一个 next 指针指向下一个节点外，还有一个 sibling 指向链表中的任意节点或者 null。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case26/ComplexList.java)
 
 ## 参考文章
 
