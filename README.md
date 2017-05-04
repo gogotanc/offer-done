@@ -195,6 +195,12 @@ F[n] = F[n-1]+ F[n-2]  (n => 2)
 
 解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case27/ConvertBinarySearchTree.java)
 
+### 面试题 28: 字符串的排列
+
+输入一个字符串，打印出该字符串中字符的所有排列。例如输入字符串 abc，则打印出字符 a、b、c 所能排列出来的所有字符串 abc、acb、bac、bca、cab 和 cba。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case28/Permutation.java)
+
 ## 参考文章
 
 1. [如何正确地写出单例模式](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/)
