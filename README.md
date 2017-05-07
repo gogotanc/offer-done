@@ -211,7 +211,7 @@ F[n] = F[n-1]+ F[n-2]  (n => 2)
 
 输入 n 个整数，找出其中最小的 k 个数。例如输入 4、5、1、6、2、7、3、8 这 8 个数字，则最小的 4 个数字是 1、2、3、4。
 
-解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case29/GetLeastNumber.java)
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case30/GetLeastNumber.java)
 
 ## 参考文章
 
