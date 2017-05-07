@@ -17,8 +17,8 @@ public class FindNumberTest {
 
         result = FindNumber.moreThanHalfNum(arr);
         Assert.assertEquals(2, result);
-        // result = FindNumber.moreThanHalfNumMethodTwo(arr);
-        // Assert.assertEquals(2, result);
+        result = FindNumber.moreThanHalfNumMethodTwo(arr);
+        Assert.assertEquals(2, result);
         result = FindNumber.moreThanHalfNumMethodThree(arr);
         Assert.assertEquals(2, result);
     }
@@ -30,8 +30,8 @@ public class FindNumberTest {
 
         result = FindNumber.moreThanHalfNum(arr);
         Assert.assertEquals(2, result);
-        // result = FindNumber.moreThanHalfNumMethodTwo(arr);
-        // Assert.assertEquals(2, result);
+        result = FindNumber.moreThanHalfNumMethodTwo(arr);
+        Assert.assertEquals(2, result);
         result = FindNumber.moreThanHalfNumMethodThree(arr);
         Assert.assertEquals(2, result);
     }
@@ -41,7 +41,7 @@ public class FindNumberTest {
         int[] arr = new int[]{};
 
         FindNumber.moreThanHalfNum(arr);
-        // FindNumber.moreThanHalfNumMethodTwo(arr);
+        FindNumber.moreThanHalfNumMethodTwo(arr);
         FindNumber.moreThanHalfNumMethodThree(arr);
     }
 
@@ -49,8 +49,17 @@ public class FindNumberTest {
     public void case4() throws Exception {
         int[] arr = null;
 
+        FindNumber.moreThanHalfNum(arr);
+        // FindNumber.moreThanHalfNumMethodTwo(arr);
+        // FindNumber.moreThanHalfNumMethodThree(arr);
+    }
+
+    @Test(expected = IllegalOperationException.class)
+    public void case5() throws Exception {
+        int[] arr = new int[]{1, 2, 3, 4};
+
         // FindNumber.moreThanHalfNum(arr);
-        // result = FindNumber.moreThanHalfNumMethodTwo(arr);
+        // FindNumber.moreThanHalfNumMethodTwo(arr);
         FindNumber.moreThanHalfNumMethodThree(arr);
     }
 }

@@ -20,14 +20,40 @@ public class FindNumber {
         }
 
         Arrays.sort(arr);
-        return arr[arr.length >> 1];
+        int result = arr[arr.length >> 1];
+        if (!checkMoreThanHalf(arr, result)) {
+            throw new IllegalOperationException("没有出现次数超过数组长度一半的数字");
+        }
+        return result;
     }
 
     /**
      * 书中的解法一：基于 partition 函数的 O(n) 算法
      */
     public static int moreThanHalfNumMethodTwo(int[] arr) {
-        return 0;
+
+        if (null == arr || arr.length == 0) {
+            throw new IllegalOperationException("输入数组非法");
+        }
+
+        int center = arr.length >> 1;
+        int start = 0;
+        int end = arr.length - 1;
+        int index = partition(arr, start, end);
+        while (index != center) {
+            if (index > center) {
+                end = index - 1;
+                index = partition(arr, start, end);
+            } else {
+                start = index + 1;
+                index = partition(arr, start, end);
+            }
+        }
+        int result = arr[center];
+        if (!checkMoreThanHalf(arr, result)) {
+            throw new IllegalOperationException("没有出现次数超过数组长度一半的数字");
+        }
+        return result;
     }
 
     /**
@@ -53,61 +79,50 @@ public class FindNumber {
                 count = 1;
             }
         }
+        if (!checkMoreThanHalf(arr, result)) {
+            throw new IllegalOperationException("没有出现次数超过数组长度一半的数字");
+        }
         return result;
     }
 
-    private static void partition(int[] arr, int left, int right) {
-        int length = right - left + 1;
-
-        if (length <= 3) {
-            // todo insert sort
-        }
-
-        int center = (left + right) >> 1;
-        int first = left;
-        int last = right;
-
-        update3Element(arr, first, center, last);
-
-        int temp = arr[right - 1];
-        arr[right - 1] = arr[right];
-        arr[right] = arr[center];
-        arr[center] = temp;
-
-        while (true) {
-            while (arr[left] <= arr[last]) {
-                left++;
-            }
-            while (arr[right] >= arr[last]) {
-                right++;
-            }
-            if (left < right) {
-                temp = arr[left];
-                arr[left] = arr[right];
-                arr[right] = temp;
-            } else {
-                break;
+    /**
+     * 检查结果是否为出现次数超过数组一半的数字
+     */
+    private static boolean checkMoreThanHalf(int[] arr, int result) {
+        int count = 0;
+        int threshold = arr.length >> 1;
+        for (int i : arr) {
+            if (i == result) {
+                count++;
             }
         }
-
-        temp = arr[last];
-        arr[last] = arr[left];
-        arr[left] = temp;
-
-        partition(arr, first, left - 1);
-        partition(arr, left + 1, last);
+        return count > threshold;
     }
 
-    private static void update3Element(int[] a, int left, int center, int right) {
-        if (a[left] >= a[center]) {
-            swap(a, left, center);
+    /**
+     * 书中的 partition 函数的实现
+     * @return 返回中位数在数组中的位置
+     */
+    private static int partition(int[] data, int start, int end) {
+        if (null == data || start < 0 || end >= data.length || (end - start + 1) <= 0) {
+            throw new IllegalOperationException("数组输入非法");
         }
-        if (a[left] >= a[right]) {
-            swap(a, left, right);
+        // 这里选择 pivot 不是随机，直接选择了中间的数
+        int pivot = ( start + end ) >> 1;
+        swap(data, pivot, end);
+        int small = start - 1;
+        int index;
+        for (index = start; index < end; index++) {
+            if (data[index] < data[end]) {
+                small++;
+                if (index != small) {
+                    swap(data, index, small);
+                }
+            }
         }
-        if (a[center] >= a[right]) {
-            swap(a, center, right);
-        }
+        small++;
+        swap(data, small, end);
+        return small;
     }
 
     private static void swap(int[] arr, int a, int b) {
