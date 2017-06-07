@@ -219,6 +219,12 @@ F[n] = F[n-1]+ F[n-2]  (n => 2)
 
 解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case31/SumOfSubarray.java)
 
+### 面试题 32: 从 1 到 n 整数中 1 出现的次数
+
+输入一个整数 n，求从 1 到 n 这 n 个整数的十进制表示中 1 出现的次数。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case32/CountOne.java)
+
 ## 参考文章
 
 1. [如何正确地写出单例模式](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/)
