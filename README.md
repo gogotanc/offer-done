@@ -241,7 +241,7 @@ F[n] = F[n-1]+ F[n-2]  (n => 2)
 
 在字符串中找出第一个只出现一次的字符。
 
-解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case34/FirstNotRepeatingChar.java)
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case35/FirstNotRepeatingChar.java)
 
 ## 参考文章
 
