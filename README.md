@@ -279,7 +279,7 @@ F[n] = F[n-1]+ F[n-2]  (n => 2)
 
 解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case41/TwoNumberWithSum.java)
 
-题目二：输入一个正数 s，打印出所有和为 s 的连续正数序列（至少含有两个数）。例如输入 15，由于 1 + 2 + 3 + 4 + 5 = 4 + 5 + 6 = 7 + 8 = 15，所以结果打印出三个连续序列 1~5、4~6 和 7~8。
+题目二：输入一个正数 s，打印出所有和为 s 的连续正数序列（至少含有两个数）。例如输入 15，由于 1 + 2 + 3 + 4 + 5 = 4 + 5 + 6 = 7 + 8 = 15，所以结果打印出三个连续序列 1～5、4～6 和 7～8。
 
 解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case41/ContinuesSequenceWithSum.java)
 
