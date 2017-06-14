@@ -273,6 +273,16 @@ F[n] = F[n-1]+ F[n-2]  (n => 2)
 
 解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case40/FindNumberAppearOnce.java)
 
+### 面试题 41: 和为 S 的两个数字 VS 和为 S 的连续正数序列
+
+题目一：输入一个递增排序的数组和一个数字 s，在数组中查找两个数，使得它们的和正好是 s。如果有多对数字的和等于 s，输出任意一对即可。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case41/TwoNumberWithSum.java)
+
+题目二：输入一个正数 s，打印出所有和为 s 的连续正数序列（至少含有两个数）。例如输入 15，由于 1 + 2 + 3 + 4 + 5 = 4 + 5 + 6 = 7 + 8 = 15，所以结果打印出三个连续序列 1~5、4~6 和 7~8。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case41/ContinuesSequenceWithSum.java)
+
 ## 参考文章
 
 1. [如何正确地写出单例模式](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/)
