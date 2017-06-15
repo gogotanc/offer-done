@@ -1,6 +1,6 @@
 # 剑指 Offer 一书题集
 
-[![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Star&style=flat-square)](https://github.com/gogotanc/offer-done)
+[![GitHub stars](https://img.shields.io/badge/building-passing-blue.svg?style=flat-square)](https://github.com/gogotanc/offer-done)
 
 最近在看《剑指 Offer》，这里使用 **Java** 解决书中的题目。
 
