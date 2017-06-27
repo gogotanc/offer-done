@@ -23,7 +23,7 @@ public class GetNumberOfK {
     }
 
     /**
-     * 方法二：二分查找
+     * 方法二：二分查找，因为是排序数组，所以是有规律可寻的。
      */
     public static int methodTwo(int[] data, int k) {
         if (null == data || data.length == 0) {
@@ -48,18 +48,40 @@ public class GetNumberOfK {
                 return -1;
             }
         }
-        int middle = (end - start + 1) / 2;
+        int middle = (end + start) / 2;
         if (data[middle] > k) {
-            return findLeft(data, start, middle, k);
+            return findLeft(data, start, middle - 1, k);
         } else if (data[middle] == k) {
-            return 0;
+            return findLeft(data, start, middle, k);
         } else {
-            return findLeft(data, middle, end, k);
+            return findLeft(data, middle + 1, end, k);
         }
     }
 
     // 找结束的位置
     private static int findRight(int[] data, int start, int end, int k) {
-        return 0;
+        int result = -1;
+        if (start == end) {
+            if (data[start] == k) {
+                result = start;
+            } else {
+                result = -1;
+            }
+            return result;
+        }
+        int middle = (end + start) / 2;
+        if (data[middle] > k) {
+            result = findRight(data, start, middle - 1, k);
+        } else if (data[middle] == k) {
+            // 防止出现 middle 恰好是唯一一次出现的位置，所以先将 middle 保存
+            result = middle;
+            int temp = findRight(data, middle + 1, end, k);
+            if (temp != -1) {
+                result = temp;
+            }
+        } else {
+            result = findRight(data, middle + 1, end, k);
+        }
+        return result;
     }
 }

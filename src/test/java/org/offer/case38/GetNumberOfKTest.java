@@ -15,12 +15,16 @@ public class GetNumberOfKTest {
         int[] data = {1, 2, 3, 4, 5, 6, 7, 8};
         int result = GetNumberOfK.methodOne(data, 3);
         assertEquals(1, result);
+        result = GetNumberOfK.methodTwo(data, 3);
+        assertEquals(1, result);
     }
 
     @Test
     public void case2() throws Exception {
         int[] data = {1, 2, 3, 4, 5, 6, 7, 8};
         int result = GetNumberOfK.methodOne(data, 9);
+        assertEquals(0, result);
+        result = GetNumberOfK.methodTwo(data, 9);
         assertEquals(0, result);
     }
 
@@ -29,13 +33,17 @@ public class GetNumberOfKTest {
         int[] data = {1, 1, 1, 1, 1, 1, 1, 1};
         int result = GetNumberOfK.methodOne(data, 1);
         assertEquals(8, result);
+        result = GetNumberOfK.methodTwo(data, 1);
+        assertEquals(8, result);
     }
 
     @Test
     public void case4() throws Exception {
-        int[] data = {1, 2, 3, 4, 5, 6, 7, 8};
+        int[] data = {1, 2, 4, 5, 6, 7, 8};
         int result = GetNumberOfK.methodOne(data, 3);
-        assertEquals(1, result);
+        assertEquals(0, result);
+        result = GetNumberOfK.methodTwo(data, 3);
+        assertEquals(0, result);
     }
 
     @Test
@@ -43,12 +51,16 @@ public class GetNumberOfKTest {
         int[] data = {1, 2, 3, 4, 5, 6, 7, 8};
         int result = GetNumberOfK.methodOne(data, 8);
         assertEquals(1, result);
+        result = GetNumberOfK.methodTwo(data, 8);
+        assertEquals(1, result);
     }
 
     @Test
     public void case6() throws Exception {
         int[] data = {1, 2, 3, 4, 5, 6, 7, 8};
         int result = GetNumberOfK.methodOne(data, 1);
+        assertEquals(1, result);
+        result = GetNumberOfK.methodTwo(data, 1);
         assertEquals(1, result);
     }
 
