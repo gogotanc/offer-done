@@ -12,7 +12,7 @@ public class ContinuesSequenceWithSumTest {
 
     @Test
     public void methodOne() throws Exception {
-
+        ContinuesSequenceWithSum.methodOne(15);
     }
 
 }
