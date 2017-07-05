@@ -12,7 +12,8 @@ public class TwoNumberWithSumTest {
 
     @Test
     public void methodOne() throws Exception {
-
+        int[] data = new int[]{1, 2, 3, 4, 5, 6, 7, 10, 23, 34, 37};
+        TwoNumberWithSum.methodOne(data, 16);
     }
 
 }
