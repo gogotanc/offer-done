@@ -12,7 +12,13 @@ public class FindNumberAppearOnceTest {
 
     @Test
     public void case1() throws Exception {
-
+        int[] data = new int[]{12, 13, 14, 14, 15, 15, 16, 16, 12, 17};
+        FindNumberAppearOnce.methodOne(data);
     }
 
+    @Test
+    public void case2() throws Exception {
+        int[] data = new int[]{12, 13};
+        FindNumberAppearOnce.methodOne(data);
+    }
 }
