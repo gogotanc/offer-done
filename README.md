@@ -299,6 +299,12 @@ F[n] = F[n-1]+ F[n-2]  (n => 2)
 
 解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case42/LeftRotateString.java)
 
+### 面试题 43: n 个骰子的点数
+
+把 n 个骰子扔在地上，多有骰子朝上一面的点数和为 s。输入 n，打印出 s 的所有可能值出现的概率。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case43/PrintProbability.java)
+
 ## 参考文章
 
 1. [如何正确地写出单例模式](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/)
