@@ -265,9 +265,13 @@ F[n] = F[n-1]+ F[n-2]  (n => 2)
 
 ### 面试题 39: 二叉树的深度
 
-输入一个二叉树的根节点，求该树的深度。从根节点到叶节点依次经过的节点（含根、叶节点）形成的一条路径，最长路径的长度为树的深度。
+题目一：输入一个二叉树的根节点，求该树的深度。从根节点到叶节点依次经过的节点（含根、叶节点）形成的一条路径，最长路径的长度为树的深度。
 
 解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case39/TreeDepth.java)
+
+题目二：输入一颗二叉树的根节点，判断该树是不是平衡二叉树。如果某二叉树中任意节点的左右子树的深度相差不超过 1，那么它就是一颗平衡二叉树。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case39/IsBalanced.java)
 
 ### 面试题 40: 数组中只出现一次的数字
 
