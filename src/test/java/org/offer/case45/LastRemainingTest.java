@@ -16,4 +16,10 @@ public class LastRemainingTest {
         assertEquals(0, result);
     }
 
+    @Test
+    public void case1() throws Exception {
+        int result = LastRemaining.methodTwo(4, 2);
+        assertEquals(0, result);
+    }
+
 }

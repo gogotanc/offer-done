@@ -10,6 +10,9 @@ public class LastRemaining {
      * 方法一：使用数组实现，通过一个索引循环遍历数组
      */
     public static int methodOne(int n, int m) {
+        if (n < 1 || m < 1) {
+            return -1;
+        }
         int[] data = new int[n];
         for (int i = 0; i < n; i++) {
             data[i] = 1;
@@ -39,6 +42,13 @@ public class LastRemaining {
      * 方法二：书上的方法，分析有点难，代码简单，寻找规律来解决
      */
     public static int methodTwo(int n, int m) {
-
+        if (n < 1 || m < 1) {
+            return -1;
+        }
+        int last = 0;
+        for (int i = 2; i < n; i++) {
+            last = (last + m) % n;
+        }
+        return last;
     }
 }
