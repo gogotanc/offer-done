@@ -323,6 +323,12 @@ F[n] = F[n-1]+ F[n-2]  (n => 2)
 
 解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case46/Accumulate.java)
 
+### 面试题 47: 不使用加减乘除做加法
+
+写一个函数，求两个整数之和，要求在函数体内不得使用加减乘除四则运算。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case47/AddTwoNumber.java)
+
 ## 参考文章
 
 1. [如何正确地写出单例模式](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/)
