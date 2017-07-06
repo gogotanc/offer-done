@@ -317,6 +317,12 @@ F[n] = F[n-1]+ F[n-2]  (n => 2)
 
 解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case45/LastRemaining.java)
 
+### 面试题 46: 求 1 + 2 + 3 + ... + n
+
+求 1 + 2 + 3 + ... + n，要求不能使用乘除法、for、while、if、else、switch、case 等关键字及条件判断语句（A ? B : C）。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case46/Accumulate.java)
+
 ## 参考文章
 
 1. [如何正确地写出单例模式](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/)
