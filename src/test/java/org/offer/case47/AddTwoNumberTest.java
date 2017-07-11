@@ -16,4 +16,10 @@ public class AddTwoNumberTest {
         assertEquals(0, result);
     }
 
+    @Test
+    public void case1() throws Exception {
+        int result = AddTwoNumber.methodOne(5, 7);
+        assertEquals(12, result);
+    }
+
 }

@@ -7,6 +7,18 @@ package org.offer.case47;
 public class AddTwoNumber {
 
     public static int methodOne(int a, int b) {
-        return 0;
+        int sum;
+        // 进位
+        int carry;
+
+        do {
+            sum = a ^ b;
+            // 1 + 1 产生进位
+            carry = (a & b) << 1;
+
+            a = sum;
+            b = carry;
+        } while (b != 0);
+        return sum;
     }
 }
