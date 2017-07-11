@@ -44,7 +44,7 @@ public class StringToInt {
                 throw new IllegalOperationException("输入非法");
             }
             result = result * 10 + num;
-            if (result < 0) {
+            if (result < 0 && result > Integer.MIN_VALUE) {
                 throw new IllegalOperationException("超过范围了");
             }
         }
