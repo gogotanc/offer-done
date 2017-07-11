@@ -329,6 +329,12 @@ F[n] = F[n-1]+ F[n-2]  (n => 2)
 
 解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case47/AddTwoNumber.java)
 
+### 面试题 48: 不能继承的类
+
+用 C++ 设计一个不能被继承的类。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case48/FinalClass.java)
+
 ## 参考文章
 
 1. [如何正确地写出单例模式](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/)
