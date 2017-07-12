@@ -353,6 +353,12 @@ F[n] = F[n-1]+ F[n-2]  (n => 2)
 
 解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case51/Duplication.java)
 
+### 面试题 52: 构建乘积数组
+
+给定一个数组 A[0, 1, 2, ..., n - 1]，请构建一个数组 B[0, 1, 2, ..., n - 1]，其中 B 中的元素 B[i] = A[0] * ... * A[i - 1] * A[i + 1] * ... * A[n - 1]。不能使用除法。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case51/Multiply.java)
+
 ## 参考文章
 
 1. [如何正确地写出单例模式](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/)
