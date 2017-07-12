@@ -12,7 +12,7 @@ public class PrintList {
     /**
      * 顺序打印链表
      *
-     * @param head 链表的头节点
+     * @param head 链表的头节点，这里头结点是单独的一个节点，与链表内容无关
      */
     public static <T extends Comparable<? super T>> void order(Node<T> head) {
         Node<T> temp = head;

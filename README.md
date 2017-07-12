@@ -383,6 +383,12 @@ F[n] = F[n-1]+ F[n-2]  (n => 2)
 
 解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case56/CycleEntry.java)
 
+### 面试题 57: 删除链表中重复的节点
+
+在一个排序的链表中，如何删除重复的节点？
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case57/DeleteRepeatNode.java)
+
 ## 参考文章
 
 1. [如何正确地写出单例模式](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/)
