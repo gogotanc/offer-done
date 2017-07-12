@@ -365,6 +365,18 @@ F[n] = F[n-1]+ F[n-2]  (n => 2)
 
 解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case53/Pattern.java)
 
+### 面试题 54: 表示数值的字符串
+
+请实现一个函数用来判断字符串是否表示数值（包括整数和小数）。例如，字符串 "+100"、"5e2"、"-123"、"3.1416" 及 "-1E-16" 都表示数值，但 "12e"、"1a3.14"、"1.2.3"、"+-5" 及 "12e+5.4" 都不是。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case54/JudgeNumber.java)
+
+### 面试题 55: 字符流中第一个不重复的字符
+
+请实现一个函数用来找出字符流中第一个只出现一次的字符。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case55/CharFirstAppear.java)
+
 ## 参考文章
 
 1. [如何正确地写出单例模式](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/)
