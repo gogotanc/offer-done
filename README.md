@@ -395,6 +395,60 @@ F[n] = F[n-1]+ F[n-2]  (n => 2)
 
 解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case58/NextTreeNode.java)
 
+### 面试题 59: 对称的二叉树
+
+请实现一个函数，用来判断一颗二叉树是不是对称的。如果一颗二叉树和它的镜像一样，则它是对称的。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case59/SymmetryTree.java)
+
+### 面试题 60: 把二叉树打印成多行
+
+从上到下按层打印二叉树，同一层的节点按从左到右的顺序打印，每一层打印到一行。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case60/PrintByLine.java)
+
+### 面试题 61: 按之字形顺序打印二叉树
+
+请实现一个函数按照之字形顺序打印二叉树，即第一行按照从左到右的顺序打印，第二层按照从右到左的顺序打印，以此类推。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case61/PrintByS.java)
+
+### 面试题 62: 序列化二叉树
+
+请实现两个函数，分别用来序列化和反序列化二叉树。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case62/SerializeBinaryTree.java)
+
+### 面试题 63: 二叉搜索树的第 K 个节点
+
+给定一颗二叉搜索树，请找出其中第 K 大的节点。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case63/BinaryTreeKth.java)
+
+### 面试题 64: 数据流中的中位数
+
+如何得到一个数据流中的中位数？如果从数据流中读出奇数个数值，那么中位数就是所有数值排序后位于中间的数值。如果从数据流中读出偶数个数值，那么中位数就是所有数值排序之后中间两个数的平均数。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case64/StreamMedian.java)
+
+### 面试题 65: 滑动窗口的最大值
+
+给定一个数组和滑动窗口大小，请找出所有滑动窗口里的最大值。例如，如果输入数组 {2, 3, 4, 2, 6, 2, 5, 1} 及滑动窗口的大小 3，那么一共存在 6 个滑动窗口，它们的最大值分别是 {4, 4, 6, 6, 6, 5}。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case65/MaxInSlidingWindow.java)
+
+### 面试题 66: 矩阵中的路径
+
+请设计一个函数，用来判断在一个矩阵中是否存在一条包含某字符串所有字符的路径。路径可以从矩阵中任意一格开始，每一步可以在矩阵中向左、右、上、下移动一格。如果某一条路径经过了矩阵的某一格，那么该路径不能再次进入该格子。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case66/StringPathInMatrix.java)
+
+### 面试题 67: 机器人的运动范围
+
+地上有一个 m 行 n 列的方格。一个机器人从坐标 (0,0) 的格子开始移动，它每一次可以向左、右、上、下移动一格，但不能进入行坐标和列坐标的数位之和大于 K 的格子。例如，当 K 为 18 时，机器人能够进入方格 (35,37)，因为 3 + 5 + 3 + 7 = 18。但它不能进入方格 (35,38)，因为 3 + 5 + 3 + 8 = 19。请问该机器人能够到达多少格子？
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case67/RobotMove.java)
+
 ## 参考文章
 
 1. [如何正确地写出单例模式](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/)
