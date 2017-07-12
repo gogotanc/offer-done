@@ -389,6 +389,12 @@ F[n] = F[n-1]+ F[n-2]  (n => 2)
 
 解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case57/DeleteRepeatNode.java)
 
+### 面试题 58: 二叉树的下一个节点
+
+给定一颗二叉树和其中的一个节点，如何找出中序遍历顺序的下一个节点？树中的节点除了有两个分别指向左右子节点的指针外，还有一个指向父节点的指针。
+
+解答：[代码地址](https://github.com/gogotanc/offer-done/blob/master/src/main/java/org/offer/case58/NextTreeNode.java)
+
 ## 参考文章
 
 1. [如何正确地写出单例模式](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/)
