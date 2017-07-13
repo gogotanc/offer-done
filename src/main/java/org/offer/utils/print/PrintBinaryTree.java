@@ -1,5 +1,6 @@
 package org.offer.utils.print;
 
+import org.offer.case60.PrintByLine;
 import org.offer.utils.node.BinaryTreeNode;
 
 /**
@@ -15,7 +16,7 @@ public class PrintBinaryTree {
     /**
      * 中序遍历
      */
-    public static void inOrder(BinaryTreeNode root) {
+    public static <E> void inOrder(BinaryTreeNode<E> root) {
         System.out.print("中序遍历结果为：");
         print(root, IN_ORDER);
     }
@@ -23,7 +24,7 @@ public class PrintBinaryTree {
     /**
      * 前序遍历
      */
-    public static void preOrder(BinaryTreeNode root) {
+    public static <E> void preOrder(BinaryTreeNode<E> root) {
         System.out.print("前序遍历结果为：");
         print(root, PRE_ORDER);
     }
@@ -31,12 +32,20 @@ public class PrintBinaryTree {
     /**
      * 后序遍历
      */
-    public static void postOrder(BinaryTreeNode root) {
+    public static <E> void postOrder(BinaryTreeNode<E> root) {
         System.out.print("后序遍历结果为：");
         print(root, POST_ORDER);
     }
 
-    public static void print(BinaryTreeNode root, int rule) {
+    /**
+     * 按行打印
+     */
+    public static <E> void printByLine(BinaryTreeNode<E> root) {
+        System.out.println("按行打印二叉树：");
+        PrintByLine.methodOne(root);
+    }
+
+    private static <E> void print(BinaryTreeNode<E> root, int rule) {
         StringBuilder builder = new StringBuilder();
         builder.append("[");
         print(root, builder, rule);
@@ -48,7 +57,7 @@ public class PrintBinaryTree {
         System.out.println(builder.toString());
     }
 
-    private static void print(BinaryTreeNode root, StringBuilder builder, int rule) {
+    private static <E> void print(BinaryTreeNode<E> root, StringBuilder builder, int rule) {
         if (null == root) {
             return;
         }

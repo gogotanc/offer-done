@@ -26,20 +26,17 @@ public class PrintNumTest {
 
     @Test
     public void methodOne() throws Exception {
-        PrintNum.printToMaxOfNDigits(4);
-        // 89531972 ns
+        PrintNum.printToMaxOfNDigits(1);
     }
 
     @Test
     public void methodTwo() throws Exception {
-        PrintNum.printToMaxOfNDigitsStr(4);
-        // 136977099 ns
+        PrintNum.printToMaxOfNDigitsStr(1);
     }
 
     @Test
     public void methodThree() throws Exception {
-        PrintNum.printToMaxOfNDigitsThree(4);
-        // 142921969 ns
+        PrintNum.printToMaxOfNDigitsThree(1);
     }
 
 }
