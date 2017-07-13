@@ -1,6 +1,5 @@
 package org.offer.case60;
 
-import org.offer.utils.BinaryTree;
 import org.offer.utils.node.BinaryTreeNode;
 
 import java.util.LinkedList;
@@ -12,6 +11,12 @@ import java.util.Queue;
  */
 public class PrintByLine {
 
+    /**
+     * 使用队列实现
+     * 使用两个变量来记录
+     * current 当前层还没有打印的数
+     * next 下一层的节点数
+     */
     public static <E> void methodOne(BinaryTreeNode<E> root) {
 
         Queue<BinaryTreeNode<E>> queue = new LinkedList<>();
