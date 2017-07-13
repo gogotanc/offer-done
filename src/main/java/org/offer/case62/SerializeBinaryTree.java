@@ -9,6 +9,7 @@ import org.offer.utils.node.BinaryTreeNode;
 public class SerializeBinaryTree {
 
     /**
+     * 序列化
      * 使用前序遍历，空节点使用特殊字符占位。
      */
     public static <E> String serialize(BinaryTreeNode<E> root) {
@@ -17,14 +18,14 @@ public class SerializeBinaryTree {
         }
         StringBuilder builder = new StringBuilder();
 
-        a(root, builder);
+        serialize(root, builder);
 
         builder.deleteCharAt(builder.lastIndexOf(","));
 
         return builder.toString();
     }
 
-    private static <E> void a(BinaryTreeNode<E> root, StringBuilder builder) {
+    private static <E> void serialize(BinaryTreeNode<E> root, StringBuilder builder) {
         if (null == root) {
             builder.append("$,");
             return;
@@ -32,8 +33,8 @@ public class SerializeBinaryTree {
 
         builder.append(root.data).append(",");
 
-        a(root.left, builder);
-        a(root.right, builder);
+        serialize(root.left, builder);
+        serialize(root.right, builder);
     }
 
     /**
