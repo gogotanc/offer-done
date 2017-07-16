@@ -1,6 +1,5 @@
 package org.offer.case53;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -9,7 +8,6 @@ import static org.junit.Assert.*;
  * 面试题 53: 正则表达式匹配
  * Created by tanc on 2017/7/12.
  */
-@Ignore
 public class PatternTest {
 
     @Test
